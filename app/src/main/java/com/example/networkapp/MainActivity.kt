@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        file = File()
+        file = File(filesDir, internalFileName)
 
         requestQueue = Volley.newRequestQueue(this)
 
